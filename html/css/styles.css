@@ -81,14 +81,12 @@ main {
     border-left: dashed brown 1rem;
 }
 footer {
-    background-color: forestgreen;
     border-right: dashed brown 1rem;
     border-left: dashed brown 1rem;
     border-bottom: dashed brown 1rem;
 }
 footer p {
-    margin-bottom: 1rem;
-    justify-items: center;
+    color: white;
 }
 .card-container {
     display: grid;
@@ -127,7 +125,7 @@ footer p {
     margin-bottom: 20px;
     line-height: 1.6;
 }
-.price {
+.card .price {
     color: green;
 }
 .btn {
@@ -154,8 +152,9 @@ footer {
     display: flex;
 }
 .footer {
-    justify-content: center;
-    align-items: center;
+    background-color: darkgreen;
+    width: 100%;
+    padding: 1rem;
 }
 @media screen and (min-width: 768px) {
     .card-container {
