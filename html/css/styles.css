@@ -128,11 +128,12 @@ footer p {
 .card .price {
     color: green;
 }
-.btn {
+.btn-box {
     display: flex;
     justify-content: space-between;
 }
-.card button {
+.btn {
+    text-decoration: none;
     background-color: darkgreen;
     color: white;
     border: none;
@@ -143,7 +144,7 @@ footer p {
     transition: all 0.3s ease;
     width: 100px;
 }
-.card button:hover {
+.btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     background-color:forestgreen;
