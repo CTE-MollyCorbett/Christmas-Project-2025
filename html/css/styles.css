@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --berry:#ac3616;
+    --pine:#5e6742;
+    --branch:#896663;
+    --wall:#d5dade;
+    --leaf:#a1a6a0;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #fafafa;
@@ -23,7 +30,7 @@ nav {
 .nav-menu a {
     text-decoration: none;
     color: white;
-    background-color: rgb(220,20,20);
+    background-color: rgb(200,20,20);
     display: block;
     border-radius: 5px;
     padding: 0.5rem;
@@ -62,11 +69,11 @@ nav {
 }
 .hero-content {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%); /* Perfect centering over the image */
     text-align: center;
-    color: rgb(200,20,20);
+    color: var(--pine);
     text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
     z-index: 2;
     width: 90%;
@@ -116,16 +123,17 @@ footer p {
     margin-bottom: 15px;
 }
 .card h3 {
-    color: #333333;
+    color: var(--branch);
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
 .card p {
-    color: #666666;
+    color: #616660;
     margin-bottom: 20px;
     line-height: 1.6;
 }
 .card .price {
+    font-size: 1.5rem;
     color: green;
 }
 .btn-box {
@@ -137,12 +145,12 @@ footer p {
     background-color: darkgreen;
     color: white;
     border: none;
-    padding: 12px 24px;
+    padding: 10px;
     border-radius: 6px;
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
-    width: 100px;
+    width: 102px;
 }
 .btn:hover {
     transform: translateY(-2px);
