@@ -46,6 +46,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: brown;
+    border-bottom: 0.5rem brown ridge;
 }
 .logo {
     color: white;
@@ -54,37 +55,9 @@ nav {
     margin-left: 2rem;
     text-decoration: underline;
 }
-.hero {
-    position: relative; /* Allows absolute positioning of child elements */
-    width: 1080px;
-    min-height: 500px;
-    margin-bottom: 2rem;
-    overflow: hidden;
-}
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Cover the entire area while maintaining aspect ratio */
-    object-position: center;
-}
-.hero-content {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Perfect centering over the image */
-    text-align: center;
-    color: var(--pine);
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-    z-index: 2;
-    width: 90%;
-    max-width: 800px;
-}
-.hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
 footer p {
     color: white;
+    text-align: center;
 }
 .large-container {
     display: grid;
@@ -92,6 +65,7 @@ footer p {
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 1rem;
     padding: 0 10px;
     margin-bottom: 3rem;
 }
@@ -100,23 +74,21 @@ footer p {
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
 }
-.card-large:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
-}
-.card-large img {
+.top-img img {
     width: 100%;
-    height: 250px;
+    height: 625px;
     object-fit: cover;
+    object-position: center;
     border-radius: 8px 8px 0 0;
     margin-bottom: 15px;
 }
-.card-large h3 {
+.card-title {
     color: var(--branch);
-    font-size: 1.5rem;
+    font-size: 3rem;
     margin-bottom: 10px;
+    text-align: center;
+    text-decoration: underline;
 }
 .card-large p {
     color: #616660;
@@ -136,12 +108,12 @@ footer p {
     background-color: darkgreen;
     color: white;
     border: none;
-    padding: 10px;
+    padding: 15px;
     border-radius: 6px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     cursor: pointer;
     transition: all 0.3s ease;
-    width: 102px;
+    width: 101px;
 }
 .btn:hover {
     transform: translateY(-2px);
@@ -155,17 +127,4 @@ footer {
     background-color: darkgreen;
     width: 100%;
     padding: 1rem;
-}
-@media screen and (min-width: 768px) {
-    .card-container {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-@media screen and (min-width: 1024px) {
-    .card-container {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .hero-content h1 {
-        font-size: 3.5rem;
-    }
 }
