@@ -12,11 +12,9 @@
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #fafafa;
 }
 nav {
     padding: 1.5rem;
-    background-color: brown;
 }
 .nav-menu {
     display: flex;
@@ -29,23 +27,30 @@ nav {
 }
 .nav-menu a {
     text-decoration: none;
-    color: white;
+    color: #dfdfdf;
     background-color: rgb(200,20,20);
     display: block;
     border-radius: 5px;
     padding: 0.5rem;
     font-size: 1.2rem;
-    transition: background-color font-size 0.5s ease;
+    transition: all 0.5s ease;
 }
 .nav-menu a:hover {
     background: red;
-    font-size: 1.3rem;
+    color: white;
 }
 .nav-container {
+    background-color: brown;
+    padding: 0rem 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: brown;
+    border-bottom: 0.5rem brown ridge;
 }
 .logo {
     color: white;
@@ -54,54 +59,6 @@ nav {
     margin-left: 2rem;
     text-decoration: underline;
 }
-/* =============================================================================================================
-============================================================================================================= */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-/* =============================================================================================================
-============================================================================================================= */
 .hero {
     position: relative; /* Allows absolute positioning of child elements */
     width: 100%;
@@ -110,10 +67,18 @@ nav {
     overflow: hidden;
 }
 .hero img {
+    margin-top: 5.9rem;
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Cover the entire area while maintaining aspect ratio */
-    object-position: center;
+    height: 100vh;
+    position: relative;
+    background-image: url(/html/images/heroImg1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .hero-content {
     position: absolute;
@@ -134,6 +99,7 @@ nav {
 main {
     border-right: dashed brown 1rem;
     border-left: dashed brown 1rem;
+    background-color: #cfffef;
 }
 footer {
     border-right: dashed brown 1rem;
